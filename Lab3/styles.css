@@ -1,0 +1,32 @@
+h1, h2 {
+    font-weight: bold;
+}
+legend {
+    font-weight: bold;
+    font-size: 1.5em; /* You can adjust the font size as needed */
+    background-color: yellow;
+}
+body {
+    text-align: center;
+    font-family: "Andale Mono", serif;
+    background-color: green;
+}
+ul{
+    list-style-type: square;
+    list-style-position: inside;
+}
+/* Apply rounded corners to the fieldset */
+fieldset {
+    border-radius: 10px; /* You can adjust the value to control the roundness */
+    border: 5px solid #000000; /* Add a border for better visual separation */
+    padding: 20px; /* Add padding to the fieldset content */
+    background-color: yellow;
+}
+.legend1
+{
+    margin-bottom:0;
+    margin-left:16px;
+}
+footer {
+    background-color: yellow;
+}
