@@ -1,5 +1,20 @@
 h1, h2 {
     font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+    color: yellow;
+}
+img {
+    height: 300px;
+    width: 230px;
+    margin: 10px;
+    padding: 10px;
+}
+a:hover {
+    background-color: black;
+}
+.aStyle {
+    color: yellow;
 }
 legend {
     font-weight: bold;
@@ -10,6 +25,8 @@ body {
     text-align: center;
     font-family: "Andale Mono", serif;
     background-color: green;
+    margin: 10px;
+    padding: 10px;
 }
 ul{
     list-style-type: square;
@@ -28,5 +45,5 @@ fieldset {
     margin-left:16px;
 }
 footer {
-    background-color: yellow;
+    color: yellow;
 }
