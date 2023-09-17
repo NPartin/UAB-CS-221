@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    position: sticky;
+    top: 0;
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
+}
+main {
+    width: 80%;
+    margin: 0 auto; /* Center */
+    background-color: gray;
+    color: #fff;
+    padding: 1em;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: cadetblue;
+    color: #fff;
+    padding: 20px;
+}
+p {
+    padding: 1em;
+}
