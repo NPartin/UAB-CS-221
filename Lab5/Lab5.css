@@ -1,0 +1,117 @@
+* {
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    justify-content: space-between;
+    margin: 0 auto 5px auto;
+    text-align: center;
+    background-color: yellow;
+    font-family: "Andale Mono", serif;
+}
+
+.flex-container-header-nav {
+    display: flex;
+    justify-content: space-between; /* Align items along the main axis (horizontally) */
+    align-items: center; /* Align items along the cross axis (vertically) */
+}
+
+/* Style the child elements */
+.flex-item-header-nav {
+    flex: 1; /* Distribute available space equally among child elements */
+    padding: 5px;
+    text-align: center;
+}
+
+.flex-container-contact {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Align items along the cross axis (horizontally) */
+}
+
+/* Style the child elements */
+.flex-item-contact {
+    flex: 1; /* Distribute available space equally among child elements */
+    padding: 5px;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    top: 0;
+    background-color: green;
+    color: white;
+    border-bottom: 5px solid yellow;
+}
+
+img {
+    height: 150px;
+    width: 130px;
+}
+
+h1,h2,h3 {
+    background-color: green;
+}
+
+a {
+    color: white;
+    background-color: green;
+}
+
+b,u {
+    background-color: green;
+}
+
+a:hover {
+    background-color: yellow;
+    color: darkgreen;
+}
+
+nav {
+    width: 80%;
+    background-color: green;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+section {
+    width: 100%;
+    background-color: green;
+    color: #fff;
+    display: flex;
+}
+
+h3 {
+    text-align: center;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: green;
+    color: white;
+}
+
+p {
+    padding: 1em;
+    background-color: green;
+}
+
+ul{
+    list-style-type: square;
+    list-style-position: inside;
+    background-color: green;
+}
+
+div {
+    background-color: green;
+}
+
+li {
+    background-color: green;
+}
+
+form{
+    color: white;
+    background-color: green;
+}
