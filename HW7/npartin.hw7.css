@@ -40,7 +40,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0; /* Initially invisible */
+    opacity: 0;
     text-align: center;
     font-size: 18px;
     color: white;
@@ -48,7 +48,7 @@ header {
 }
 
 .grid-item::after {
-    content: "\1F50D"; /* Unicode character for magnifying glass (you can replace it with an icon or image URL) */
+    content: "\1F50D";
     font-size: 24px;
     color: white;
     opacity: 0;
@@ -60,7 +60,7 @@ header {
     background-image: url("image1.jpeg");
     background-size: cover;
     background-position: center;
-    position: relative; /* Add this to create a positioning context */
+    position: relative;
 }
 
 .grid-item:nth-child(2) {
@@ -147,7 +147,6 @@ header {
     content: "My brother and I in New Orleans";
     opacity: 1;
 }
-
 
 .grid-item:nth-child(1):hover::after,
 .grid-item:nth-child(2):hover::after,
