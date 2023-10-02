@@ -1,0 +1,162 @@
+header {
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* referenced from https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns */
+    grid-auto-rows: calc((100vw - 40px) / 3); /* referenced from https://developer.mozilla.org/en-US/docs/Web/CSS/calc */
+    grid-gap: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    border-radius: 50px;
+    border-color: white;
+}
+
+.grid-item:hover {
+    transform: scale(110%);
+}
+
+.grid-item::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Initially invisible */
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    border-radius: 50px;
+}
+
+.grid-item::after {
+    content: "\1F50D"; /* Unicode character for magnifying glass (you can replace it with an icon or image URL) */
+    font-size: 24px;
+    color: white;
+    opacity: 0;
+    z-index: 1;
+    border-radius: 50px;
+}
+
+.grid-item:nth-child(1) {
+    background-image: url("image1.jpeg");
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Add this to create a positioning context */
+}
+
+.grid-item:nth-child(2) {
+    background-image: url("image2.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-item:nth-child(3) {
+    background-image: url("image3.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-item:nth-child(4) {
+    background-image: url("image4.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-item:nth-child(5) {
+    background-image: url("image5.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-item:nth-child(6) {
+    background-image: url("image6.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-item:nth-child(7) {
+    background-image: url("image7.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-item:nth-child(8) {
+    background-image: url("image8.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-item:nth-child(9) {
+    background-image: url("image9.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-item:nth-child(1):hover::before {
+    content: "My girlfriend and I on our 2 year anniversary";
+    opacity: 1;
+}
+.grid-item:nth-child(2):hover::before {
+    content: "My friend and I with Coach Dilfer";
+    opacity: 1;
+}
+.grid-item:nth-child(3):hover::before {
+    content: "My girlfriend and I at formal";
+    opacity: 1;
+}
+.grid-item:nth-child(4):hover::before {
+    content: "My friend and I at a formal";
+    opacity: 1;
+}
+.grid-item:nth-child(5):hover::before {
+    content: "2 friends and I hanging out";
+    opacity: 1;
+}
+.grid-item:nth-child(6):hover::before {
+     content: "Friends and I at a UAB Basketball game";
+     opacity: 1;
+ }
+.grid-item:nth-child(7):hover::before {
+    content: "My girlfriend and I at a date party";
+    opacity: 1;
+}
+.grid-item:nth-child(8):hover::before {
+    content: "Friends and I at a UAB Basketball Game again";
+    opacity: 1;
+}
+.grid-item:nth-child(9):hover::before {
+    content: "My brother and I in New Orleans";
+    opacity: 1;
+}
+
+
+.grid-item:nth-child(1):hover::after,
+.grid-item:nth-child(2):hover::after,
+.grid-item:nth-child(3):hover::after,
+.grid-item:nth-child(4):hover::after,
+.grid-item:nth-child(5):hover::after,
+.grid-item:nth-child(6):hover::after,
+.grid-item:nth-child(7):hover::after,
+.grid-item:nth-child(8):hover::after,
+.grid-item:nth-child(9):hover::after{
+    opacity: 1;
+}
