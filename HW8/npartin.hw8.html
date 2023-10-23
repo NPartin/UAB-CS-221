@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Rewards</title>
+    <!-- JS for console output -->
+    <script>
+        window.onload = function() {
+
+            // prompt the user for the grade
+            // prompt opens when the page is loaded
+            let grade = parseFloat(prompt("Enter the student's numeric grade:"));
+
+            // check for invalid input (Bonus)
+            if (isNaN(grade) || grade < 0 || grade > 100) {
+                console.error("Invalid grade entered. Please enter a value between 0 and 100.");
+                return;
+            }
+
+            // if/else for letter grade
+            let letterGrade;
+            if (grade >= 90) {
+                letterGrade = 'A';
+            } else if (grade >= 80) {
+                letterGrade = 'B';
+            } else if (grade >= 70) {
+                letterGrade = 'C';
+            } else if (grade >= 60) {
+                letterGrade = 'D';
+            } else {
+                letterGrade = 'F';
+            }
+
+            // switch for reward
+            let reward;
+            switch (letterGrade) {
+                case 'A':
+                    reward = 'Candy';
+                    break;
+                case 'B':
+                    reward = 'Apple';
+                    break;
+                case 'C':
+                    reward = 'Mint';
+                    break;
+                case 'D':
+                    reward = 'Pencil';
+                    break;
+                case 'F':
+                    reward = 'Awkward conversation with parents';
+                    break;
+            }
+
+            // log answers in console
+            console.log(`Grade: ${grade}\nLetter Grade: ${letterGrade}\nReward: ${reward}`);
+        };
+    </script>
+</head>
+<body>
+    <h1>Npartin HW8 Grade Rewards System</h1>
+    <p>Check inspect > console to see the results.</p>
+</body>
+</html>
